@@ -12,6 +12,7 @@ export default class Policy {
           ["starts-with", "$key", `${config.dirName ? config.dirName + "/" : ""}`],
           ["starts-with", "$Content-Type", ""],
           ["starts-with", "$x-amz-meta-tag", ""],
+          {"Cache-Control": "max-age=2592000,public"},
           { "x-amz-algorithm": "AWS4-HMAC-SHA256" },
           {
             "x-amz-credential": `${config.accessKeyId}/${dateYMD}/${
