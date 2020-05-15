@@ -25,6 +25,7 @@ type Conditions = [
   GenericType,
   GenericType,
   GenericType,
+  GenericType,
   GenericType
 ];
 
